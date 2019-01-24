@@ -1,0 +1,17 @@
+[package]
+name = "wasm-validate"
+version = "0.1.0"
+authors = ["Fedor Sakharov <fedor.sakharov@gmail.com>"]
+edition = "2018"
+
+[features]
+default = ["std"]
+std = ["parity-wasm/std"]
+
+[dependencies]
+memory_units = "0.3.0"
+parity-wasm = { version = "0.31", default-features = false }
+
+[dev-dependencies]
+wabt = "0.6"
+assert_matches = "1.1"
